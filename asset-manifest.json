@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/DigitalNest-E-commerce/static/css/main.ea8aab05.css",
-    "main.js": "/DigitalNest-E-commerce/static/js/main.bae98c6e.js",
+    "main.js": "/DigitalNest-E-commerce/static/js/main.54563d1d.js",
     "static/js/453.c1630ed6.chunk.js": "/DigitalNest-E-commerce/static/js/453.c1630ed6.chunk.js",
     "index.html": "/DigitalNest-E-commerce/index.html",
     "main.ea8aab05.css.map": "/DigitalNest-E-commerce/static/css/main.ea8aab05.css.map",
-    "main.bae98c6e.js.map": "/DigitalNest-E-commerce/static/js/main.bae98c6e.js.map",
+    "main.54563d1d.js.map": "/DigitalNest-E-commerce/static/js/main.54563d1d.js.map",
     "453.c1630ed6.chunk.js.map": "/DigitalNest-E-commerce/static/js/453.c1630ed6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ea8aab05.css",
-    "static/js/main.bae98c6e.js"
+    "static/js/main.54563d1d.js"
   ]
 }
