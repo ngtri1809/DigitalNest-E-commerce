@@ -1,17 +1,35 @@
-export default function CategoryFilter({ categories, onSelect }) {
+// src/components/CategoryFilter.jsx
+export default function CategoryFilter({ categories, selectedCategory, onSelect }) {
     return (
-      <div className="mb-6">
-        <select 
-          onChange={(e) => onSelect(e.target.value)}
-          className="p-2 border rounded"
-        >
-          <option value="">All Categories</option>
+      <div className="mb-8">
+        <div className="flex flex-wrap gap-3 items-center">
+          <span className="font-medium">Filter by:</span>
+          
+          <button
+            onClick={() => onSelect('')}
+            className={`px-4 py-2 rounded-full text-sm ${
+              !selectedCategory 
+                ? 'bg-indigo-600 text-white' 
+                : 'bg-gray-100 hover:bg-gray-200'
+            }`}
+          >
+            All Products
+          </button>
+          
           {categories.map(category => (
-            <option key={category} value={category}>
+            <button
+              key={category}
+              onClick={() => onSelect(category)}
+              className={`px-4 py-2 rounded-full text-sm ${
+                selectedCategory === category
+                  ? 'bg-indigo-600 text-white'
+                  : 'bg-gray-100 hover:bg-gray-200'
+              }`}
+            >
               {category}
-            </option>
+            </button>
           ))}
-        </select>
+        </div>
       </div>
     );
   }

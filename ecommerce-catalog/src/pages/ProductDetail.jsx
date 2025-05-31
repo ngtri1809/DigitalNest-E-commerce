@@ -33,8 +33,11 @@ export default function ProductDetail() {
         />
         
         <div>
-          <h1 className="text-3xl font-bold mb-2">{product.name}</h1>
-          <p className="text-2xl font-semibold text-indigo-600 mb-4">${product.price}</p>
+          <span className="text-sm uppercase text-gray-500 font-medium">
+            {product.category}
+          </span>
+          <h1 className="text-3xl font-bold mt-1 mb-2">{product.name}</h1>
+          <p className="text-2xl font-semibold text-indigo-600 mb-4">${product.price.toFixed(2)}</p>
           <p className="text-gray-700 mb-6">{product.description}</p>
           
           <button
